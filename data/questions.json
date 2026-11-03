@@ -1,420 +1,215 @@
 [
   {
-    "id": "hci_evaluation_methods",
-    "subjectId": "hci_evaluation_methods",
+    "id": "basic_network_troubleshooting",
+    "subjectId": "basic_network_troubleshooting",
     "questionType": "Identification, Enumeration",
     "questions": [
       {
         "type": "identification",
-        "question": "What concept refers to how easy, efficient, and effective a system is to use?",
-        "answer": "Usability"
+        "question": "What core principle guides basic network troubleshooting before attempting to apply a fix?",
+        "answer": "Understand the result first. Fix the problem second."
       },
       {
         "type": "identification",
-        "question": "What type of usability measurement is determined through performance tasks such as counting clicks or timing an action?",
-        "answer": "Quantitative"
+        "question": "Which network parameter uniquely identifies your device on the network?",
+        "answer": "IPv4 address"
       },
       {
         "type": "identification",
-        "question": "What type of usability measurement is based on user opinions, feedback, and surveys regarding how simple or tiring a system feels?",
-        "answer": "Qualitative"
+        "question": "Which network parameter helps define which devices share the local network?",
+        "answer": "Subnet mask"
       },
       {
         "type": "identification",
-        "question": "What evaluation tool often includes questions involving ease of use, ease of learning, fatigue, and simple preference?",
-        "answer": "Usability Survey"
+        "question": "Which network component serves as the exit route, usually sending traffic outside the local network?",
+        "answer": "Default gateway"
       },
       {
         "type": "identification",
-        "question": "What concept refers to the overall feeling, satisfaction, and emotional connection users have while interacting with a system?",
-        "answer": "User Experience (UX)"
+        "question": "Which Windows command displays the IPv4 address, subnet mask, and default gateway?",
+        "answer": "ipconfig"
       },
       {
         "type": "identification",
-        "question": "What is the simplest evaluation method that involves talking to users or watching them use the system?",
-        "answer": "Interview / Observation"
+        "question": "What diagnostic command or tool is used to test connectivity one step at a time outward from your device?",
+        "answer": "ping"
       },
       {
         "type": "identification",
-        "question": "What evaluation method involves users thinking aloud while using the system to describe what they are doing and why?",
-        "answer": "Cognitive Walkthrough"
+        "question": "What system connects human-readable names to website IP addresses?",
+        "answer": "DNS"
       },
       {
         "type": "identification",
-        "question": "What evaluation method involves usability experts reviewing a system using established principles?",
-        "answer": "Expert Heuristic Evaluation"
+        "question": "Which command checks DNS resolution?",
+        "answer": "nslookup"
       },
       {
         "type": "identification",
-        "question": "What term is used for the established principles used by usability experts during an evaluation?",
-        "answer": "Heuristics"
+        "question": "Which command clears the DNS resolver cache in Windows?",
+        "answer": "ipconfig /flushdns"
       },
       {
         "type": "identification",
-        "question": "Whose ten General UI heuristics are highlighted as standard principles for expert heuristic evaluation?",
-        "answer": "Nielsen"
+        "question": "If connecting directly to an IP address works but using a website name fails, what component is likely causing the problem?",
+        "answer": "DNS"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic states that the system should keep users informed about what is going on through appropriate feedback?",
-        "answer": "Visibility of system status"
+        "question": "When a device has no local IP address, what automated IP assignment connection should be checked alongside the adapter, cable, and Wi-Fi?",
+        "answer": "DHCP connection"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic emphasizes speaking the users' language with words, phrases, and concepts familiar to the user rather than system-oriented terms?",
-        "answer": "Match between system and the real world"
+        "question": "If local network connectivity works but internet access fails, what service provider connection should be checked alongside the router and gateway?",
+        "answer": "ISP connection"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic provides users with freedom and an easy way to exit unwanted system states?",
-        "answer": "User control and freedom"
+        "question": "What is the first target step when using ping to test outward connections?",
+        "answer": "Own device"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic states that users should not have to wonder whether different words, situations, or actions mean the same thing?",
-        "answer": "Consistency and standards"
+        "question": "What is Step 01 in the simple troubleshooting order?",
+        "answer": "Connect"
       },
       {
         "type": "identification",
-        "question": "Which UI heuristic focuses on eliminating error-prone conditions or warning users before they commit to an action?",
-        "answer": "Error prevention"
-      },
-      {
-        "type": "identification",
-        "question": "Which UI heuristic minimizes the user's memory load by making objects, actions, and options visible rather than forcing memory retrieval?",
-        "answer": "Recognition rather than recall"
-      },
-      {
-        "type": "identification",
-        "question": "Which UI heuristic allows shortcuts for expert users to speed up interactions while still accommodating inexperienced users?",
-        "answer": "Flexibility and efficiency of use"
-      },
-      {
-        "type": "identification",
-        "question": "Which UI heuristic specifies that dialogues should not contain information that is irrelevant or rarely needed?",
-        "answer": "Aesthetic and minimalist design"
-      },
-      {
-        "type": "identification",
-        "question": "Which UI heuristic ensures error messages are expressed in plain language, indicate the problem, and suggest a constructive solution?",
-        "answer": "Help users recognize, diagnose, and recover from errors"
-      },
-      {
-        "type": "identification",
-        "question": "Which UI heuristic provides information and documentation to help users complete their tasks when needed?",
-        "answer": "Help and documentation"
-      },
-      {
-        "type": "identification",
-        "question": "What evaluation step involves collecting numerical or survey-based data to measure interface effectiveness?",
-        "answer": "Measurement"
-      },
-      {
-        "type": "identification",
-        "question": "What authorization must participants give before participating in a user interface evaluation?",
-        "answer": "Informed consent"
-      },
-      {
-        "type": "identification",
-        "question": "What fundamental right must participants always retain whenever they feel uncomfortable during an evaluation?",
-        "answer": "Right to stop"
-      },
-      {
-        "type": "identification",
-        "question": "In quantitative usability, what metric measures the duration required to complete an action?",
-        "answer": "Time"
-      },
-      {
-        "type": "identification",
-        "question": "In quantitative usability, what metric measures the number of user inputs required to complete an action?",
-        "answer": "Number of clicks"
-      },
-      {
-        "type": "identification",
-        "question": "What specific user insights are revealed by a cognitive walkthrough during task performance?",
-        "answer": "Thought process and points of confusion"
-      },
-      {
-        "type": "identification",
-        "question": "What primary benefit does interview/observation offer that designers might otherwise experience?",
-        "answer": "Helps identify problems that designers might miss"
-      },
-      {
-        "type": "identification",
-        "question": "Besides satisfaction and overall feeling, what emotional aspect is part of User Experience (UX)?",
-        "answer": "Emotional connection"
-      },
-      {
-        "type": "identification",
-        "question": "What type of UI evaluation data involves satisfaction scores, error rates, or task completion time?",
-        "answer": "Measurement data"
-      },
-      {
-        "type": "identification",
-        "question": "Ethical UI evaluation guidelines state that evaluations must be both safe and what?",
-        "answer": "Respectful"
+        "question": "What is Step 05 in the simple troubleshooting order?",
+        "answer": "Record"
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the three attributes used to define usability in Chapter 5.",
+        "question": "Enumerate the three initial local checks to perform on a device before running any command.",
         "answers": [
-          "Easy to use",
-          "Efficient to use",
-          "Effective to use"
+          "Connection",
+          "Conditions",
+          "Reset"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two classifications of usability measurements.",
+        "question": "Enumerate the three specific conditions to inspect during initial local device troubleshooting.",
         "answers": [
-          "Quantitative",
-          "Qualitative"
+          "Airplane mode",
+          "Signal strength",
+          "Whether other devices have the same problem"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two performance task metrics used for quantitative usability measurement.",
+        "question": "Enumerate the two reset actions that can clear simple connection issues.",
         "answers": [
-          "How many clicks",
-          "How much time it takes to complete an action"
+          "Restarting the device",
+          "Reconnecting to the network"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate three sources of qualitative usability data.",
+        "question": "Enumerate the three IP values that describe a device's local position and route outward.",
         "answers": [
-          "User opinions",
-          "Feedback",
-          "Surveys"
+          "IPv4 address",
+          "Subnet mask",
+          "Default gateway"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate four common topics addressed in a Usability Survey.",
+        "question": "Enumerate the four ping test targets/steps in sequential order.",
         "answers": [
-          "Ease of use",
-          "Ease of learning",
-          "Fatigue",
-          "Simple preference"
+          "Own device",
+          "Router",
+          "Internet",
+          "Compare"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate three aspects of interaction covered by User Experience (UX).",
+        "question": "Enumerate the three sequential steps of the DNS process when accessing a site.",
         "answers": [
-          "Enjoyable",
-          "Intuitive",
-          "Stress-free"
+          "Enter Domain",
+          "DNS Resolution",
+          "Connect to Site"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the three UI evaluation methods discussed in the material.",
+        "question": "Enumerate the two useful DNS troubleshooting commands provided in the source material.",
         "answers": [
-          "Interview / Observation",
-          "Cognitive Walkthrough",
-          "Expert Heuristic Evaluation"
+          "nslookup",
+          "ipconfig /flushdns"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two ways to conduct an interview/observation evaluation.",
+        "question": "Enumerate the four items to check when a device receives no local IP address.",
         "answers": [
-          "Talk to users",
-          "Watch users use the system"
+          "Adapter",
+          "Cable",
+          "Wi-Fi",
+          "DHCP connection"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the two things users explain while performing a cognitive walkthrough.",
+        "question": "Enumerate the three items to check when local connectivity works but internet access fails.",
         "answers": [
-          "What they are doing",
-          "Why they are doing it"
+          "Router",
+          "Gateway",
+          "ISP connection"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two key insights revealed through a cognitive walkthrough.",
+        "question": "Enumerate the two items to check when only one application fails.",
         "answers": [
-          "User thought process",
-          "Points of confusion"
+          "The app",
+          "Its service"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the first five of Nielsen's ten General UI heuristics.",
+        "question": "Enumerate the five steps in the simple troubleshooting order.",
         "answers": [
-          "Visibility of system status",
-          "Match between system and the real world",
-          "User control and freedom",
-          "Consistency and standards",
-          "Error prevention"
+          "Connect",
+          "Identify",
+          "Test",
+          "Resolve",
+          "Record"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate the remaining five (6 to 10) of Nielsen's ten General UI heuristics.",
+        "question": "Enumerate the types of connections to check during Step 01 (Connect) of troubleshooting.",
         "answers": [
-          "Recognition rather than recall",
-          "Flexibility and efficiency of use",
-          "Aesthetic and minimalist design",
-          "Help users recognize, diagnose, and recover from errors",
-          "Help and documentation"
+          "Physical connection",
+          "Wireless connection"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate all ten of Nielsen's General UI heuristics.",
+        "question": "Enumerate the three components to test separately during Step 03 (Test) of troubleshooting.",
         "answers": [
-          "Visibility of system status",
-          "Match between system and the real world",
-          "User control and freedom",
-          "Consistency and standards",
-          "Error prevention",
-          "Recognition rather than recall",
-          "Flexibility and efficiency of use",
-          "Aesthetic and minimalist design",
-          "Help users recognize, diagnose, and recover from errors",
-          "Help and documentation"
+          "Local device",
+          "Router",
+          "Internet"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate three types of data collected during the measurement stage of evaluation.",
+        "question": "Enumerate the two elements to test during Step 04 (Resolve) of troubleshooting.",
         "answers": [
-          "Time",
-          "Error rates",
-          "Satisfaction scores"
+          "DNS",
+          "Specific app or website"
         ]
       },
       {
         "type": "enumeration",
-        "question": "Enumerate two safety and ethical guidelines for participant evaluations.",
+        "question": "Enumerate the two specific things to document in Step 05 (Record) of troubleshooting.",
         "answers": [
-          "Users should give informed consent before participating",
-          "Participants should always have the right to stop whenever they feel uncomfortable"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate the three key outcomes ensured by evaluating a user interface as listed in the summary.",
-        "answers": [
-          "The system is easy to use (usability)",
-          "The experience is positive and enjoyable (UX)",
-          "The process is safe, ethical, and user-centered"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two qualitative perceptions users may have about a system's interface.",
-        "answers": [
-          "How simple the system feels",
-          "How tiring the system feels"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two forms of data collected to measure effectiveness in UI evaluation.",
-        "answers": [
-          "Numerical data",
-          "Survey-based data"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate the two core criteria used to evaluate user interfaces.",
-        "answers": [
-          "Usability",
-          "User Experience (UX)"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate three key qualities of user experience beyond basic functionality.",
-        "answers": [
-          "Overall feeling",
-          "Satisfaction",
-          "Emotional connection"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two specific qualitative feedback descriptors mentioned for UX.",
-        "answers": [
-          "Intuitive",
-          "Stress-free"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two principles of ethical participant treatment during interface testing.",
-        "answers": [
-          "Informed consent",
-          "Right to stop"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two characteristics of expert heuristic evaluation.",
-        "answers": [
-          "Conducted by usability experts",
-          "Uses established principles called heuristics"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two reasons why interview/observation is beneficial.",
-        "answers": [
-          "It is the simplest evaluation method",
-          "Helps identify problems that designers might miss"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two requirements for evaluation safety and ethics.",
-        "answers": [
-          "Safe",
-          "Respectful"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate two task performance dimensions measured quantitatively.",
-        "answers": [
-          "Clicks",
-          "Time"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate the two main pillars of Nielsen's heuristics that address errors.",
-        "answers": [
-          "Error prevention",
-          "Help users recognize, diagnose, and recover from errors"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate the two heuristics that deal with system language and system state visibility.",
-        "answers": [
-          "Visibility of system status",
-          "Match between system and the real world"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate the two heuristics that address system design aesthetics and documentation.",
-        "answers": [
-          "Aesthetic and minimalist design",
-          "Help and documentation"
-        ]
-      },
-      {
-        "type": "enumeration",
-        "question": "Enumerate the two heuristics that focus on user memory and user flexibility.",
-        "answers": [
-          "Recognition rather than recall",
-          "Flexibility and efficiency of use"
+          "What changed",
+          "What result you got"
         ]
       }
     ]

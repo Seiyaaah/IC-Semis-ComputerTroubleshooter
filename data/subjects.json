@@ -1,7 +1,7 @@
 [
   {
-    "id": "hci_evaluation_methods",
-    "title": "Human-Computer Interaction: UI Evaluation Criteria and Methods",
-    "description": "Covers usability criteria, user experience (UX), evaluation techniques like cognitive walkthroughs and heuristic evaluation, and safety and ethical considerations in UI evaluation."
+    "id": "basic_network_troubleshooting",
+    "title": "Basic Network Troubleshooting",
+    "description": "A practical guide to diagnosing and resolving network connectivity issues, covering local device checks, IP address configuration, ping tests, DNS resolution, and systematic troubleshooting steps."
   }
 ]

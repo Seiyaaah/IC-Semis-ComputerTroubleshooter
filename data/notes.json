@@ -1,76 +1,87 @@
 [
   {
-    "id": "hci_evaluation_methods",
-    "subjectId": "hci_evaluation_methods",
-    "title": "Human-Computer Interaction: UI Evaluation Criteria and Methods",
-    "summary": "Evaluating a user interface involves assessing usability and user experience through various evaluation methods while maintaining safety and ethical standards.",
+    "id": "basic_network_troubleshooting",
+    "subjectId": "basic_network_troubleshooting",
+    "title": "Basic Network Troubleshooting",
+    "summary": "Basic Network Troubleshooting provides a systematic diagnostic process for resolving network connectivity issues by starting at the local device and moving outward through IP configuration, ping tests, DNS resolution, and layer analysis.",
     "sections": [
       {
-        "title": "1. Evaluation Criteria: Usability",
+        "title": "Basic Network Troubleshooting Overview",
         "paragraphs": [
-          "Usability is about how easy, efficient, and effective a system is to use.",
-          "Usability Survey: Often includes questions involving the ease of use, ease of learning, fatigue, simple preference, and other questions specific to the given interface."
-        ],
-        "list": [
-          "Quantitative: Measured through performance tasks (e.g., how many clicks, how much time it takes to complete an action).",
-          "Qualitative: Based on user opinions, feedback, and surveys (e.g., how simple or tiring the system feels)."
-        ]
-      },
-      {
-        "title": "Evaluation Criteria: User Experience (UX)",
-        "paragraphs": [
-          "UX is more than usability it’s about the overall feeling, satisfaction, and emotional connection users have while interacting with the system. Covers how enjoyable, intuitive, and stress-free the app feels."
+          "A practical path from \"no connection\" to the right next test.",
+          "Understand the result first. Fix the problem second. Start close to the device, move outward, and let each command answer one question."
         ],
         "list": []
       },
       {
-        "title": "2. Evaluation Methods",
-        "paragraphs": [],
-        "list": [
-          "INTERVIEW / OBSERVATION: The simplest way: talk to users or watch them use the system. Helps identify problems that designers might miss.",
-          "COGNITIVE WALKTHROUGH: Users \"think aloud\" while using the system. They describe what they are doing and why. This reveals their thought process and points of confusion.",
-          "EXPERT HEURISTIC EVALUATION: Usability experts review the system using established principles called heuristics."
-        ]
-      },
-      {
-        "title": "Nielsen's Ten General UI Heuristics",
-        "paragraphs": [],
-        "list": [
-          "Visibility of system status",
-          "Match between system and the real world",
-          "User control and freedom",
-          "Consistency and standards",
-          "Error prevention",
-          "Recognition rather than recall",
-          "Flexibility and efficiency of use",
-          "Aesthetic and minimalist design",
-          "Help users recognize, diagnose, and recover from errors",
-          "Help and documentation"
-        ]
-      },
-      {
-        "title": "Measurement",
+        "title": "Start Local: Check the Device First",
         "paragraphs": [
-          "Collect numerical or survey-based data to measure effectiveness. Can involve time, error rates, or satisfaction scores."
+          "Small physical checks often explain a \"network problem\" before any command is needed. Start with what you can see."
+        ],
+        "list": [
+          "Connection: Is Wi-Fi turned on, or is the Ethernet cable connected?",
+          "Conditions: Check airplane mode, signal strength, and whether other devices have the same problem.",
+          "Reset: Restarting the device or reconnecting to the network can clear simple connection issues."
+        ]
+      },
+      {
+        "title": "Your IP Address Tells You Where You Are",
+        "paragraphs": [
+          "An IP address identifies the device on the network. These three values describe its local position and its route outward.",
+          "Windows command: ipconfig shows the IPv4 address, subnet mask, and default gateway."
+        ],
+        "list": [
+          "IPv4 address (Device): Identifies your device on the network.",
+          "Subnet mask (Local Area): Helps define which devices share the local network.",
+          "Default gateway (Exit Route): Usually the router sending traffic outside the local network."
+        ]
+      },
+      {
+        "title": "Use Ping to Test One Connection at a Time",
+        "paragraphs": [
+          "Move outward in small steps. The first failed step gives you a useful boundary.",
+          "Remember: A successful ping checks basic connectivity, but it does not prove that every app or service is working."
+        ],
+        "list": [
+          "01 Own device: Ping your own device or local address.",
+          "02 Router: Ping the router or default gateway.",
+          "03 Internet: Ping a known internet address.",
+          "04 Compare: See which step fails before guessing at a fix."
+        ]
+      },
+      {
+        "title": "DNS Connects Names to Websites",
+        "paragraphs": [
+          "People use names like [suspicious link removed], but devices connect using IP addresses.",
+          "Process: Enter Domain -> DNS Resolution -> Connect to Site.",
+          "When names fail: If an IP address works but a website name does not, DNS may be the problem.",
+          "Useful commands: nslookup checks resolution. ipconfig /flushdns clears the resolver cache."
         ],
         "list": []
       },
       {
-        "title": "3. Safety & Ethics",
+        "title": "Read the Result Before Changing Settings",
         "paragraphs": [
-          "Evaluations must be safe and respectful. Users should give informed consent before participating. Participants should always have the right to stop whenever they feel uncomfortable."
-        ],
-        "list": []
-      },
-      {
-        "title": "Summary",
-        "paragraphs": [
-          "Evaluating a user interface ensures that:"
+          "The same symptom can point to different layers. Let the test result choose the next question."
         ],
         "list": [
-          "The system is easy to use (usability)",
-          "The experience is positive and enjoyable (UX)",
-          "The process is safe, ethical, and user-centered"
+          "No local IP: Check the adapter, cable, Wi-Fi, or DHCP connection.",
+          "Local works, internet fails: Check the router, gateway, or ISP connection.",
+          "IP works, names fail: Focus on DNS.",
+          "Only one app fails: The network may be fine. Check the app or its service."
+        ]
+      },
+      {
+        "title": "A Simple Troubleshooting Order",
+        "paragraphs": [
+          "Good troubleshooting narrows the problem one layer at a time instead of relying on random fixes."
+        ],
+        "list": [
+          "01 Connect: Check the physical or wireless connection.",
+          "02 Identify: Check the device's IP settings.",
+          "03 Test: Test the local device, router, and internet separately.",
+          "04 Resolve: Test DNS and the specific app or website.",
+          "05 Record: Write down what changed and what result you got."
         ]
       }
     ]
